@@ -72,9 +72,6 @@ export default function SearchBar() {
      {/* 📱 MOBILE OVERLAY */}
 {isMobileOpen && (
   <div className="fixed inset-0 bg-white z-[10005] flex flex-col p-4 w-screen h-screen left-0 top-0">
-    {/* This 'fixed' and 'inset-0' with 'left-0 top-0' 
-        forces it to cover the WHOLE phone screen 
-        regardless of what the Navbar is doing */}
     
     <div className="flex justify-between items-center mb-6">
       <p className="text-xl font-bold text-black">Search</p>

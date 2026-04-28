@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Banner2 = () => {
   return (
-    <div className="mx-4 lg:mx-8 mt-8">
+    <div className="mx-4 lg:mx-8 mt-4 md:mt-8">
       <div className="bg-[#3f3f46] rounded-2xl px-6 py-6 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-2 lg:gap-6 overflow-hidden">
         {/* 🔥 LEFT TEXT */}
         <div className="text-center lg:text-left text-white lg:max-w-[200px]">
@@ -36,7 +36,7 @@ const Banner2 = () => {
           <h2 className="text-lg lg:text-2xl font-semibold text-[#65FDF4]">
             BF–33C UHF Compact Communication Walkie Talkie
           </h2>
-          <p className="mt-2 text-gray-200 text-2xl font-semibold">
+          <p className="mt-2 text-gray-200 text-xl md:text-2xl font-semibold">
             Stay Connected Anywhere
           </p>
         </div>

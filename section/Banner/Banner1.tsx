@@ -26,7 +26,7 @@ const cards = [
 
 export default function Banner1() {
   return (
-    <div className="px-4 lg:px-8 mt-6">
+    <div className="px-4 lg:px-8 mt-4">
 
       {/* 🔥 MOBILE SLIDER */}
       <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory lg:hidden no-scrollbar">

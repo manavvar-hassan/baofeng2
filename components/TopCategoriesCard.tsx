@@ -69,12 +69,14 @@ export default function TopCategoriesCard() {
   };
 
   return (
-    <div className="bg-[#F3FBFF] rounded-2xl p-6">
+    <div className="bg-[#F3FBFF] rounded-2xl p-4 md:p-6">
       {/* HEADER */}
       <div className="flex justify-between items-center mb-6">
         <div className="flex items-center gap-3">
           <h2 className="text-xl font-semibold">Top Categories</h2>
-          <span className="text-sm font-semibold text-[#0069AF] cursor-pointer">View All</span>
+          <span className="text-sm font-semibold text-[#0069AF] cursor-pointer">
+            View All
+          </span>
         </div>
 
         <div className="flex items-center gap-3">
@@ -97,7 +99,7 @@ export default function TopCategoriesCard() {
       {/* SLIDER */}
       <div
         ref={scrollRef}
-        className="flex gap-6 overflow-x-scroll scroll-smooth no-scrollbar cursor-grab active:cursor-grabbing"
+        className="flex overflow-x-auto scroll-smooth no-scrollbar cursor-grab active:cursor-grabbing"
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
@@ -106,16 +108,16 @@ export default function TopCategoriesCard() {
         {loopItems.map((item, i) => (
           <div
             key={i}
-            className="min-w-[120px] flex flex-col items-center gap-2"
+            className="flex-shrink-0 w-1/3 md:w-1/5 flex flex-col items-center gap-2"
           >
             <Image
               width={150}
               height={150}
               src={item.img}
               alt=""
-              className="w-16 h-16 object-contain"
+              className="w-20 h-20 object-contain"
             />
-            <p className="text-sm font-medium">{item.name}</p>
+            <p className="text-sm font-medium text-center">{item.name}</p>
           </div>
         ))}
       </div>

@@ -37,25 +37,38 @@ export default function OrbitIcons() {
   }, []);
 
   return (
-    <div className="relative flex items-center justify-center ml-18">
-      <div className="absolute top-1 left-[42%]">
-        <RadarEffect />
+    <div className="relative flex items-center justify-center">
+      {/* IMAGE WRAPPER */}
+      <div className="relative">
+        {/* RADAR (fixed to image) */}
+        <div className="absolute top-0 left-1/3 -translate-x-1/3">
+          <RadarEffect />
+        </div>
+
+        {/* WALKIE */}
+        <Image src="/images/wt.png" width={292} height={462} alt="wt" />
       </div>
-      {/* WALKIE */}
-      <Image src="/images/wt.png" width={292} height={462} alt="wt" />
 
       {/* ICONS */}
-      {["vo-ai", "power", "vox", "channel", "fl", "fq", 'charger'].map((icon, i) => (
-        <div
-          key={icon} 
-          ref={(el) => {
-            if (el) iconsRef.current[i] = el;
-          }}
-          className="absolute"
-        >
-          <Image src={`/icons/${icon}.png`} width={50} height={50} alt="icon" className="h-auto w-auto"/>
-        </div>
-      ))}
+      {["vo-ai", "power", "vox", "channel", "fl", "fq", "charger"].map(
+        (icon, i) => (
+          <div
+            key={icon}
+            ref={(el) => {
+              if (el) iconsRef.current[i] = el;
+            }}
+            className="absolute"
+          >
+            <Image
+              src={`/icons/${icon}.png`}
+              width={50}
+              height={50}
+              alt="icon"
+              className="h-auto w-auto"
+            />
+          </div>
+        ),
+      )}
     </div>
   );
 }

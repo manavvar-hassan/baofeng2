@@ -9,9 +9,9 @@ import AnimatedLogo from "@/components/AnimatedLogo";
 const Navbar = () => {
   return (
     <div
-      className="bg-[#F3FBFF] mx-2 lg:mx-8 py-2 px-2 xl:px-5 
-flex items-center justify-between mt-4 rounded-full shadow-md 
-sticky top-4 z-[9999]"
+      className="bg-[#F3FBFF] mx-2 py-2 px-2 xl:px-5 
+flex items-center justify-between rounded-full shadow-md 
+sticky top-1 z-[9999]"
     >
       {/* 🔥 LEFT */}
       <div className="flex items-center gap-3 shrink-0">
@@ -43,7 +43,7 @@ sticky top-4 z-[9999]"
 
         {/* ❤️ HEART */}
         <div className="hidden lg:block bg-white p-3 rounded-full cursor-pointer">
-          <Heart fill="red" className="w-4 h-4 md:w-6 md:h-6" />
+          <Heart fill="red" stroke="red" className="w-4 h-4 md:w-6 md:h-6" />
         </div>
 
         {/* 👤 USER */}

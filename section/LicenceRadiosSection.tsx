@@ -3,17 +3,18 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import "../components/ThreeD/ThreeD.css";
-import { Star } from "lucide-react";
+import { Eye, Star } from "lucide-react";
 
 const LicenceRadiosSection = () => {
   return (
-    <div className="mx-4 lg:mx-8 mt-10 bg-[#F3FBFF] border border-[#E2F3FB] rounded-2xl p-6">
+    <div className="mx-4 lg:mx-8 mt-10 bg-[#F3FBFF] border border-[#E2F3FB] rounded-2xl p-3 md:p-6">
       {/* 🔥 HEADER */}
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-semibold">Licence Radios</h2>
 
-        <button className="flex items-center gap-2 text-sm bg-white px-4 py-2 rounded-full border">
-          👁 View All
+        <button className="flex items-center gap-2 text-xs md:text-sm font-semibold bg-white px-3 py-2 rounded-full border border-[#D7E9F2] text-[#0069AF] hover:bg-[#E0F3FA] transition">
+          <Eye size={20} />
+          View All
         </button>
       </div>
 
@@ -66,7 +67,7 @@ const LicenceRadiosSection = () => {
             "Earphone",
             "Antenna",
           ].map((item, i) => (
-            <div key={i} className="flex items-center gap-3">
+            <div key={i} className="flex items-center justify-center gap-3">
               <Image src="/images/a2.png" alt="" width={40} height={40} />
               <div>
                 <p className="text-sm font-medium">{item}</p>
@@ -82,7 +83,7 @@ const LicenceRadiosSection = () => {
         {[1, 2, 3, 4].map((item) => (
           <div
             key={item}
-            className="group relative w-[180px] sm:w-[200px] md:w-[220px] xl:w-[293px] h-[290px] lg:h-[426px] flex-shrink-0"
+            className="group relative w-[220px] sm:w-[220px] md:w-[260px] xl:w-[293px] h-[290px] lg:h-[426px] flex-shrink-0"
           >
             <div className="relative w-full h-full bg-white rounded-xl p-4 flex flex-col justify-between transition duration-500 group-hover:shadow-[0_0_30px_-5px_#0069AF] shadow-md">
               {/* 🔥 TOP BADGES */}

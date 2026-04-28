@@ -9,8 +9,8 @@ import {
 
 export default function Footer() {
   return (
-    <div className="bg-[#031C26] text-white px-6 lg:px-12 py-12 mt-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+    <div className="bg-[#031C26] text-white px-6 lg:px-12 py-12 mt-3 mb:mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-10">
         {/* 🔥 LEFT - SUBSCRIBE */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Exclusive</h3>

@@ -1,17 +1,19 @@
 import InstaCard from "@/components/InstaCard";
+import { Eye } from "lucide-react";
 
 const InstagramSection = () => {
   return (
-    <div className="mx-4 sm:mx-6 lg:mx-8 bg-gradient-to-r from-[#FB2C36] to-[#FF6900] py-6 sm:py-8 rounded-2xl">
+    <div className="mx-2 sm:mx-6 lg:mx-8 bg-gradient-to-r from-[#FB2C36] to-[#FF6900] py-6 sm:py-8 rounded-2xl">
       {/* 🔥 HEADER */}
-      <div className="flex justify-between items-center px-4 sm:px-6 lg:px-16 mb-4">
-        <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-white">
-          ⚡ License Free on instagram
+      <div className="flex items-center justify-between mb-6 px-2">
+        <h2 className="text-sm lg:text-2xl font-semibold text-white">
+          ⚡License Free on instagram
         </h2>
 
-        <p className="text-[#0069AF] font-semibold text-xs sm:text-sm px-4 py-2 bg-white rounded-full cursor-pointer">
+        <button className="flex items-center gap-2 text-xs md:text-sm font-semibold bg-white px-3 py-2 rounded-full border border-[#D7E9F2] text-[#0069AF] hover:bg-[#E0F3FA] transition">
+          <Eye size={20} />
           View All
-        </p>
+        </button>
       </div>
 
       {/* 📱 MOBILE → SLIDER */}

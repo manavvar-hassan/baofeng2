@@ -1,0 +1,1 @@
+export const cartRef = { current: null as null | HTMLDivElement };

@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 
 export default function BottomBanner() {
   return (
-    <div className="mx-4 lg:mx-8 mt-6 py-6 rounded-2xl overflow-hidden bg-[#0B0F14] relative">
+    <div className="mx-4 lg:mx-8 mt-3 mb:mt-6 py-6 rounded-2xl overflow-hidden bg-[#0B0F14] relative">
       {/* 🌌 BG GRADIENT OVERLAY */}
 
       <div className="relative flex flex-col md:flex-row items-center justify-between px-6">
@@ -27,10 +27,10 @@ export default function BottomBanner() {
           </p>
 
           {/* 🔘 BUTTON */}
-          <button className="mt-6 flex w-fit items-center gap-3 bg-[#0B6CBF] hover:bg-[#095aa0] transition px-6 py-3 rounded-full text-sm font-medium">
+          <button className="mt-3 mb:mt-6 flex w-fit items-center gap-3 bg-[#0B6CBF] hover:bg-[#095aa0] transition px-6 py-3 rounded-full text-sm font-medium">
             View All Product
-            <span className="w-8 h-8 bg-white text-black flex items-center justify-center rounded-full -rotate-45">
-              <MoveRight />
+            <span className="w-5 md:w-10 h-5 md:h-10 bg-white text-black flex items-center justify-center rounded-full -rotate-45">
+              <MoveRight size={14}/>
             </span>
           </button>
         </div>

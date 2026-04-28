@@ -57,7 +57,7 @@ export default function DualBanner() {
       </div>
 
       {/* ⚡ RIGHT BANNER */}
-      <div className="holographic-card flex-1 relative bg-[#2b2b2b] rounded-2xl px-6 flex items-center justify-between">
+      <div className="holographic-card flex-1 relative bg-[#2b2b2b] rounded-2xl py-3 px-6 text-center sm:text-start flex flex-col sm:flex-row items-center justify-between">
         <div className="text-white">
           <p className="text-2xl text-[#FDE70C] font-semibold">NEW ARRIVAL</p>
           <p className="text-sm text-gray-300 mt-1">
@@ -71,13 +71,13 @@ export default function DualBanner() {
           <Image
             src="/images/newA1.png"
             alt=""
-            width={260}
+            width={460}
             height={320}
             className="absolute -bottom-6 right-0"
           />
 
           {/* 🔼 RADIO 1 */}
-          <div className="absolute bottom-9 -right-5 w-[180px] sm:w-[220px] md:w-[260px] lg:w-[280px] h-[180px] animate-float1 relative">
+          <div className="absolute -left-14 sm:left-0 bottom-4 sm:bottom-8 w-[180px] sm:w-[220px] md:w-[260px] lg:w-[280px] h-[280px] animate-float1 relative">
             <Image
               src="/images/feature.png"
               alt=""
@@ -87,7 +87,7 @@ export default function DualBanner() {
           </div>
 
           {/* 🔽 RADIO 2 */}
-          <div className="absolute bottom-0 right-2 w-[80px] sm:w-[90px] md:w-[100px] h-[140px] sm:h-[160px] md:h-[180px] animate-float2 relative">
+          <div className="absolute bottom-0 right-10 w-[80px] sm:w-[90px] md:w-[100px] h-[140px] sm:h-[160px] md:h-[180px] animate-float2 relative">
             <Image
               src="/images/radio2.png"
               alt=""

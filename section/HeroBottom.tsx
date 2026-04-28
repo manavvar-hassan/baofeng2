@@ -16,8 +16,8 @@ const accessories = [
 
 export default function BottomHero() {
   return (
-    <div className="px-4 lg:px-8 mt-6">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="px-4 lg:px-8 mt-2 md:mt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6">
         {/* LEFT CARD */}
 
         <TopCategoriesCard />

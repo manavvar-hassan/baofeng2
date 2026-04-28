@@ -2,6 +2,8 @@
 
 body {
   background: #d7e9f2;
+  margin: 0;
+  padding: 0;
 }
 
 /* Hide scrollbar */

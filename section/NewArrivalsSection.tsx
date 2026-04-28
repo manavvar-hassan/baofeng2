@@ -72,14 +72,14 @@ const products = [
 
 export default function NewArrivalsSection() {
   return (
-    <div className="mx-4 lg:mx-8 px-4 lg:px-8 py-6 mt-8 bg-[#F3FBFF] border border-[#EBF7FD] rounded-2xl">
+    <div className="mx-4 lg:mx-8 px-4 lg:px-8 py-4 mt-4 md:mt-8 bg-[#F3FBFF] border border-[#EBF7FD] rounded-2xl">
       {/* 🔥 Header */}
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl lg:text-2xl font-semibold">
+        <h2 className="text-[18px] lg:text-2xl font-semibold">
           Explore New Arrivals
         </h2>
 
-        <button className="flex items-center gap-2 text-sm font-semibold bg-white px-4 py-2 rounded-full border border-[#D7E9F2] text-[#0069AF] hover:bg-[#E0F3FA] transition">
+        <button className="flex items-center gap-2 text-xs md:text-sm font-semibold bg-white px-3 py-2 rounded-full border border-[#D7E9F2] text-[#0069AF] hover:bg-[#E0F3FA] transition">
           <Eye size={20} />
           View All
         </button>

@@ -31,8 +31,8 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="mt-2">
-      <div className="relative w-full aspect-[16/7] min-h-[205px] max-h-[650px] overflow-hidden cursor-pointer">
+    <div className="mt-8 md:mt-0">
+      <div className="relative aspect-[16/9]  md:aspect-[16/6] max-h-[1440px] mx-auto overflow-hidden cursor-pointer">
         {/* 🔥 Slides (stacked) */}
         {slides.map((slide, i) => (
           <div
@@ -56,8 +56,8 @@ export default function HeroSlider() {
             <div className="absolute inset-0 bg-black/20"></div>
 
             {/* TEXT */}
-            <div className="absolute z-20 left-4 md:left-16 -bottom-3 md:top-1/2 -translate-y-1/2 text-white lg:max-w-lg">
-              <h1 className="text-lg sm:text-xl md:text-3xl font-semibold mb-2 md:mb-4 line-clamp-1 md:line-clamp-none">
+            <div className="absolute z-20 left-4 md:left-16 -bottom-3 xl:-bottom-26 -translate-y-1/2 text-white lg:max-w-lg">
+              <h1 className="text-lg sm:text-xl md:text-3xl font-semibold mb-2 md:mb-4 line-clamp-1 xl:line-clamp-none">
                 {slide.title}
               </h1>
               <p className="hidden md:block text-base md:text-lg mb-2 md:mb-6 opacity-80">

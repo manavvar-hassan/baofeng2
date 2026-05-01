@@ -33,7 +33,7 @@ export default function BottomHero() {
 
           <div className="grid grid-cols-4 gap-4">
             {accessories.map((item, i) => (
-              <div key={i} className="flex justify-center">
+              <div key={i} className="flex justify-center hover:scale-150 transition-all cursor-pointer">
                 <Image
                   width={180}
                   height={180}

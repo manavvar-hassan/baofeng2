@@ -1,5 +1,6 @@
 import HologramIcons from "@/components/HologramIcons";
 import InstaCard from "@/components/InstaCard";
+import Loader from "@/components/Loader/Loader";
 import ThreeD from "@/components/ThreeD/ThreeD";
 import Banner1 from "@/section/Banner/Banner1";
 import Banner2 from "@/section/Banner/Banner2";
@@ -14,6 +15,7 @@ import LicenceRadiosSection from "@/section/LicenceRadiosSection";
 import Navbar from "@/section/Navbar";
 import NewArrivalsSection from "@/section/NewArrivalsSection";
 import TrendingSearch from "@/section/TrendingSearch";
+import { Commet } from "react-loading-indicators";
 export const metadata = {
   title: "Baofeng2",
   description: "Home",
@@ -22,19 +24,20 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <HeroSlider />
-      <HeroBottom />
-      <Banner1 />
-      <NewArrivalsSection />
-      <Banner2 />
-      <Banner3 />
-      <LicenceRadiosSection />
-      <DualBanner />
-      <InstagramSection />
-      <TrendingSearch />
-      <BottomBanner />
-      <Footer />
+      {/* <Loader /> */}
+        <Navbar />
+        <HeroSlider />
+        <HeroBottom />
+        <Banner1 />
+        <NewArrivalsSection />
+        <Banner2 />
+        <Banner3 />
+        <LicenceRadiosSection />
+        <DualBanner />
+        <InstagramSection />
+        <TrendingSearch />
+        <BottomBanner />
+        <Footer />
     </>
   );
 }

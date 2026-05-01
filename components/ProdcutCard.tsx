@@ -18,9 +18,9 @@ const ProductCard = ({ product }: { product: Product }) => {
   const imgRef = useRef<HTMLDivElement>(null);
   const [activeImg, setActiveImg] = useState(product.image);
   const { flyToCart } = useFlyToCart();
-  
+
   return (
-    <div className="bg-white rounded-2xl py-6 px-10 relative border border-[#C9E6F4] group hover:shadow-[-3px_2px_31px_-7px_#0069AF] duration-400 transition">
+    <div className="bg-white rounded-2xl py-6 px-10 relative border border-[#C9E6F4] group hover:shadow-[-3px_2px_31px_-7px_#0069AF] duration-400 transition cursor-pointer">
       {/* 🔵 Top Icons */}
       <div className="absolute top-3 right-3 flex gap-2">
         <button className="w-9 h-9 flex items-center justify-center bg-white text-[#0069AF] rounded-xl shadow border border-[#0069AF] hover:bg-[#0069AF] hover:text-white transition">
@@ -29,19 +29,22 @@ const ProductCard = ({ product }: { product: Product }) => {
 
         <button
           onClick={() => flyToCart(imgRef.current!)}
-          className="w-9 h-9 flex items-center justify-center bg-white rounded-xl shadow border border-[#0069AF] text-[#0069AF] hover:bg-[#0069AF] hover:text-white transition cursor-pointer"
+          className="w-9 h-9 flex items-center justify-center bg-white rounded-xl shadow border border-[#0069AF] text-[#0069AF] hover:bg-[#0069AF] hover:text-white transition cursor-pointer z-[999]"
         >
           <ShoppingCart size={20} />
         </button>
       </div>
 
       {/* 📸 MAIN IMAGE */}
-      <div ref={imgRef} className="flex justify-center">
+      <div
+        ref={imgRef}
+        className="flex justify-center group-hover:scale-130 transition-all  duration-400  group-hover:-translate-y-10"
+      >
         <Image
           src={activeImg}
           alt="product"
-          width={130}
-          height={130}
+          width={230}
+          height={230}
           className="object-contain h-30"
         />
       </div>

@@ -27,7 +27,7 @@ export default function BottomBanner() {
           </p>
 
           {/* 🔘 BUTTON */}
-          <button className="mt-3 mb:mt-6 flex w-fit items-center gap-3 bg-[#0B6CBF] hover:bg-[#095aa0] transition px-6 py-3 rounded-full text-sm font-medium">
+          <button className="mt-3 mb:mt-6 flex w-fit items-center gap-3 bg-[#0B6CBF] hover:bg-[#095aa0] transition px-6 py-3 rounded-full text-sm font-medium cursor-pointer">
             View All Product
             <span className="w-5 md:w-10 h-5 md:h-10 bg-white text-black flex items-center justify-center rounded-full -rotate-45">
               <MoveRight size={14}/>

@@ -4,24 +4,12 @@ import { useState, useRef, useEffect } from "react";
 import { Search, X } from "lucide-react";
 
 export default function SearchBar() {
-  const [isDesktopOpen, setIsDesktopOpen] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [value, setValue] = useState("");
 
   const wrapperRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // 🔥 FIXED: Use 'click' instead of 'mousedown' for better mobile support
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
-        setIsDesktopOpen(false);
-      }
-    };
-
-    document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, []);
 
   // 🔥 MOBILE SCROLL LOCK
   useEffect(() => {
@@ -44,12 +32,9 @@ export default function SearchBar() {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder="Search Product"
-          className={`outline-none text-sm transition-all duration-300 ${
-            isDesktopOpen ? "w-40 lg:w-56 opacity-100 px-2" : "w-0 opacity-0 px-0"
-          }`}
+          className="outline-none text-sm w-40 lg:w-56 opacity-100 px-4"
         />
         <div
-          onClick={() => setIsDesktopOpen(true)}
           className="bg-black rounded-full p-3 cursor-pointer shrink-0"
         >
           <Search className="w-4 h-4 text-white" />

@@ -119,45 +119,48 @@ export default function Footer() {
           justify-content: center;
           background: transparent;
           border: 1px solid #3b4b55;
-          transition: all 0.3s ease;
           cursor: pointer;
+
+          /* 🔥 GPU + smooth */
+          transition:
+            transform 0.25s ease,
+            background 0.25s ease,
+            box-shadow 0.25s ease;
+          will-change: transform;
+          transform: translateZ(0); /* 💥 flicker killer */
+          backface-visibility: hidden;
         }
 
-        // .social-icon:hover {
-        //   transform: translateY(-6px) scale(1.1);
-        //   background: #0ea5e9;
-        //   box-shadow: 0 10px 20px rgba(14, 165, 233, 0.4);
-        // }
+        .social-icon:hover {
+          transform: scale(1.05) translateZ(0);
+        }
 
+        /* FACEBOOK */
         .social-icon:first-child:hover {
-          transform: translateY(-6px) scale(1.1);
-          background: #1877F2;
-          box-shadow: 0 10px 20px rgba(14, 165, 233, 0.4);
+          background: #1877f2;
+          box-shadow: 0 6px 12px rgba(24, 119, 242, 0.35);
         }
 
-        .social-icon:nth-child(3):hover {
-          transform: translateY(-6px) scale(1.1);
-          background: #E4405F;
-          background-image: linear-gradient( #f9ce34, #ee2a7b, #6228d7.)
-          box-shadow: 0 10px 20px rgba(14, 165, 233, 0.4);
-        }
-
+        /* TWITTER */
         .social-icon:nth-child(2):hover {
-          transform: translateY(-6px) scale(1.1);
-          background: #1DA1F2;
-          background-image: linear-gradient(to bottom, #FB2C36,#FF6900)
-          box-shadow: 0 10px 20px rgba(14, 165, 233, 0.4);
+          background: #1da1f2;
+          box-shadow: 0 6px 12px rgba(29, 161, 242, 0.35);
         }
 
+        /* INSTAGRAM */
+        .social-icon:nth-child(3):hover {
+          background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+          box-shadow: 0 6px 12px rgba(228, 64, 95, 0.35);
+        }
+
+        /* LINKEDIN */
         .social-icon:nth-child(4):hover {
-          transform: translateY(-6px) scale(1.1);
-          background: #0A66C2;
-          background-image: linear-gradient(to bottom, #FB2C36,#FF6900)
-          box-shadow: 0 10px 20px rgba(14, 165, 233, 0.4);
+          background: #0a66c2;
+          box-shadow: 0 6px 12px rgba(10, 102, 194, 0.35);
         }
 
         .social-icon:hover svg {
-          color: white;
+          color: #fff;
         }
       `}</style>
     </div>

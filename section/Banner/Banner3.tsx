@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const LicenseFreeSection = () => {
   return (
-    <div className="mt-4 md:mt-8 bg-[#146BA6] px-4 sm:px-6 py-6 sm:py-8 overflow-hidden">
+    <div className="mt-4 md:mt-8 bg-[#146BA6] px-4 sm:px-6 py-6 overflow-hidden">
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
         {/* 🔥 LEFT SIDE */}
         <div className="flex-1 text-white relative z-10">
@@ -45,11 +45,11 @@ md:min-w-[220px] md:max-w-[260px]
 xl:min-w-[293px] xl:max-w-[293px] 
 h-[350px] lg:h-[426px] flex-shrink-0"
               >
-                <div className="relative w-full h-full bg-white rounded-xl p-4 flex flex-col justify-between transition duration-500 group-hover:shadow-[0_0_30px_-5px_#0069AF]">
+                <div className="relative w-full h-full bg-white rounded-xl p-4 flex flex-col justify-between transition duration-500 group-hover:shadow-[0_0_30px_-5px_#0069AF] cursor-pointer">
                   {/* 🔥 TOP BADGES */}
                   <div className="flex flex-col gap-1">
                     <p
-                      className="relative overflow-hidden px-2 py-1 bg-red-500 rounded-full w-fit text-white text-xs uppercase hot-tag"
+                      className="relative overflow-hidden px-2 py-1 bg-linear-to-r from-[#ff0000] to-[#ff9a00] rounded-full w-fit text-white text-xs uppercase hot-tag font-semibold"
                       style={{ animationDelay: `${item * 0.2}s` }}
                     >
                       hot deal
@@ -67,7 +67,7 @@ h-[350px] lg:h-[426px] flex-shrink-0"
                       src="/images/hd2.png"
                       alt=""
                       fill
-                      className="object-contain transition duration-500 group-hover:opacity-0"
+                      className="object-contain transition ease-in-out duration-600 group-hover:scale-130 group-hover:opacity-100 group-hover:-translate-y-20"
                     />
                   </div>
 
@@ -83,16 +83,6 @@ h-[350px] lg:h-[426px] flex-shrink-0"
                       ₹1599
                     </span>
                   </div>
-                </div>
-
-                {/* FLOAT IMAGE */}
-                <div className="absolute bottom-20 left-1/2 -translate-x-1/2 w-[80%] h-[40%] pointer-events-none">
-                  <Image
-                    src="/images/hd2.png"
-                    alt=""
-                    fill
-                    className="object-contain opacity-0 transition duration-500 group-hover:scale-150 group-hover:opacity-100 group-hover:-translate-y-16"
-                  />
                 </div>
               </div>
             ))}

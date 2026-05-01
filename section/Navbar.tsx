@@ -9,9 +9,9 @@ import AnimatedLogo from "@/components/AnimatedLogo";
 const Navbar = () => {
   return (
     <div
-      className="bg-[#F3FBFF] mx-2 py-2 px-2 xl:px-5 
+      className="bg-[#F3FBFF] py-2 px-2 xl:px-5 
 flex items-center justify-between rounded-full shadow-md 
-sticky top-1 z-[9999]"
+fixed top-1 z-[9999] w-full"
     >
       {/* 🔥 LEFT */}
       <div className="flex items-center gap-3 shrink-0">
@@ -23,13 +23,13 @@ sticky top-1 z-[9999]"
           <AnimatedLogo />
         </div>
       </div>
+        <div className="relative z-[10000]">
+          <SearchBar />
+        </div>
 
       {/* 🔥 RIGHT */}
       <div className="flex items-center gap-2 lg:gap-4 shrink-0">
         {/* 🔍 SEARCH */}
-        <div className="relative z-[10000]">
-          <SearchBar />
-        </div>
 
         {/* 🛒 CART */}
         <div

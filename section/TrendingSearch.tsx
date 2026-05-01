@@ -73,12 +73,9 @@ export default function TrendingSearch() {
             <a
               key={i}
               href="#_"
-              className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#9ACFF2] rounded-full shadow-md group"
+              className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out bg-[#F3FBFF] rounded-full shadow-sm hover:bg-[#9ACFF2]/50 hover:text-white group"
             >
-              <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#0069AF] group-hover:translate-x-0 ease">
-                <MoveRight />
-              </span>
-              <span className="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform group-hover:translate-x-full ease">
+              <span className="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform  ease">
                 {tag}
               </span>
               <span className="relative invisible">{tag}</span>

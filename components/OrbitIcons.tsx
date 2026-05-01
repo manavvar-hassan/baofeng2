@@ -23,15 +23,15 @@ export default function OrbitIcons() {
         motionPath: {
           path: "M180,0 A180,180 0 1,1 -180,0 A180,180 0 1,1 180,0",
         },
-        onUpdate() {
-          const progress = this.progress();
-          const scale = 0.6 + Math.sin(progress * Math.PI) * 0.6;
+        // onUpdate() {
+        //   const progress = this.progress();
+        //   const scale = 0.6 + Math.sin(progress * Math.PI) * 0.6;
 
-          gsap.set(icon, {
-            scale,
-            zIndex: Math.round(scale * 10),
-          });
-        },
+        //   gsap.set(icon, {
+        //     scale,
+        //     zIndex: Math.round(scale * 10),
+        //   });
+        // },
       });
     });
   }, []);
@@ -50,25 +50,33 @@ export default function OrbitIcons() {
       </div>
 
       {/* ICONS */}
-      {["vo-ai", "power", "vox", "channel", "fl", "fq", "charger"].map(
-        (icon, i) => (
-          <div
-            key={icon}
-            ref={(el) => {
-              if (el) iconsRef.current[i] = el;
-            }}
-            className="absolute"
-          >
-            <Image
-              src={`/icons/${icon}.png`}
-              width={50}
-              height={50}
-              alt="icon"
-              className="h-auto w-auto"
-            />
-          </div>
-        ),
-      )}
+      {[
+        "vo-ai",
+        "power",
+        "vox",
+        "channel",
+        "fl",
+        "fq",
+        "charger",
+        "type-c",
+        "time-out",
+      ].map((icon, i) => (
+        <div
+          key={icon}
+          ref={(el) => {
+            if (el) iconsRef.current[i] = el;
+          }}
+          className="absolute"
+        >
+          <Image
+            src={`/icons/${icon}.png`}
+            width={45}
+            height={45}
+            alt="icon"
+            className="h-auto w-auto"
+          />
+        </div>
+      ))}
     </div>
   );
 }

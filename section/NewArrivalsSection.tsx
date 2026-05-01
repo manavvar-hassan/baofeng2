@@ -9,7 +9,7 @@ const products = [
     title: "Baofeng UV-17R Plus Dual-Band Portable Two-Way Radio Pack",
     price: "₹3000",
     oldPrice: "₹9980",
-    image: "/images/a1.png",
+    image: "/images/feature.png",
     thumbs: ["/images/a1.png", "/images/a2.png", "/images/a3.png"],
   },
   {
@@ -17,7 +17,7 @@ const products = [
     title: "Baofeng UV-17R Plus Dual-Band Portable Two-Way Radio Pack",
     price: "₹3000",
     oldPrice: "₹9980",
-    image: "/images/a1.png",
+    image: "/images/feature.png",
     thumbs: ["/images/a1.png", "/images/a2.png", "/images/a3.png"],
   },
   {
@@ -25,7 +25,7 @@ const products = [
     title: "Baofeng UV-17R Plus Dual-Band Portable Two-Way Radio Pack",
     price: "₹3000",
     oldPrice: "₹9980",
-    image: "/images/a1.png",
+    image: "/images/feature.png",
     thumbs: ["/images/a1.png", "/images/a2.png", "/images/a3.png"],
   },
   {
@@ -33,7 +33,7 @@ const products = [
     title: "Baofeng UV-17R Plus Dual-Band Portable Two-Way Radio Pack",
     price: "₹3000",
     oldPrice: "₹9980",
-    image: "/images/a1.png",
+    image: "/images/feature.png",
     thumbs: ["/images/a1.png", "/images/a2.png", "/images/a3.png"],
   },
   {
@@ -41,7 +41,7 @@ const products = [
     title: "Baofeng UV-17R Plus Dual-Band Portable Two-Way Radio Pack",
     price: "₹3000",
     oldPrice: "₹9980",
-    image: "/images/a1.png",
+    image: "/images/feature.png",
     thumbs: ["/images/a1.png", "/images/a2.png", "/images/a3.png"],
   },
   {
@@ -49,7 +49,7 @@ const products = [
     title: "Baofeng UV-17R Plus Dual-Band Portable Two-Way Radio Pack",
     price: "₹3000",
     oldPrice: "₹9980",
-    image: "/images/a1.png",
+    image: "/images/feature.png",
     thumbs: ["/images/a1.png", "/images/a2.png", "/images/a3.png"],
   },
   {
@@ -57,7 +57,7 @@ const products = [
     title: "Baofeng UV-17R Plus Dual-Band Portable Two-Way Radio Pack",
     price: "₹3000",
     oldPrice: "₹9980",
-    image: "/images/a1.png",
+    image: "/images/feature.png",
     thumbs: ["/images/a1.png", "/images/a2.png", "/images/a3.png"],
   },
   {
@@ -65,7 +65,7 @@ const products = [
     title: "Baofeng UV-17R Plus Dual-Band Portable Two-Way Radio Pack",
     price: "₹3000",
     oldPrice: "₹9980",
-    image: "/images/a1.png",
+    image: "/images/feature.png",
     thumbs: ["/images/a1.png", "/images/a2.png", "/images/a3.png"],
   },
 ];

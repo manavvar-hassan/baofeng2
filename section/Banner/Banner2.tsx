@@ -5,7 +5,7 @@ import Image from "next/image";
 const Banner2 = () => {
   return (
     <div className="mx-4 lg:mx-8 mt-4 md:mt-8">
-      <div className="bg-[#3f3f46] rounded-2xl px-6 py-6 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-2 lg:gap-6 overflow-hidden">
+      <div className="bg-[#3f3f46] rounded-2xl px-6 py-6 lg:py-0 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-2 lg:gap-6 overflow-hidden">
         {/* 🔥 LEFT TEXT */}
         <div className="text-center lg:text-left text-white lg:max-w-[200px]">
           <p className="text-yellow-400 font-medium text-xl">NEW ARRIVAL</p>
@@ -18,10 +18,10 @@ const Banner2 = () => {
         {/* 📸 CENTER IMAGE + GLOW */}
         <div className="relative flex justify-center items-center">
           {/* 💡 GLOW LAYER */}
-          <div className="absolute w-52 h-52 bg-cyan-500/60 rounded-full blur-3xl animate-glowPulse" />
+          <div className="absolute w-72 h-72 bg-cyan-500/70 rounded-full blur-2xl animate-glowPulse" />
 
           {/* 📸 IMAGE */}
-          <div className="w-[300px] lg:w-[200px] h-[300px] lg:h-[200px] relative">
+          <div className="w-[300px] lg:w-[250px] h-[300px] lg:h-[250px] relative">
             <Image
               src="/images/banner2/radio.png"
               alt="Walkie Talkie"

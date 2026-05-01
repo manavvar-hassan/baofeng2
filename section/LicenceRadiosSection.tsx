@@ -48,7 +48,7 @@ const LicenceRadiosSection = () => {
                         lg:rotate-45 scale-125
                         group-hover:rotate-0 
                         group-hover:scale-230 
-                        group-hover:-translate-y-10 
+                        group-hover:-translate-y-27 
                         md:animate-none
                         animate-floatMobile
                         cursor-pointer
@@ -67,7 +67,10 @@ const LicenceRadiosSection = () => {
             "Earphone",
             "Antenna",
           ].map((item, i) => (
-            <div key={i} className="flex items-center justify-center gap-3">
+            <div
+              key={i}
+              className="flex items-center justify-center gap-3 hover:scale-140 transition-all cursor-pointer duration-300"
+            >
               <Image src="/images/a2.png" alt="" width={40} height={40} />
               <div>
                 <p className="text-sm font-medium">{item}</p>
@@ -85,12 +88,12 @@ const LicenceRadiosSection = () => {
             key={item}
             className="group relative w-[220px] sm:w-[220px] md:w-[260px] xl:w-[293px] h-[290px] lg:h-[426px] flex-shrink-0"
           >
-            <div className="relative w-full h-full bg-white rounded-xl p-4 flex flex-col justify-between transition duration-500 group-hover:shadow-[0_0_30px_-5px_#0069AF] shadow-md">
+            <div className="relative w-full h-full bg-white rounded-xl p-4 flex flex-col justify-between transition duration-500 group-hover:shadow-[0_0_30px_-5px_#0069AF] shadow-md cursor-pointer">
               {/* 🔥 TOP BADGES */}
               <div className="flex flex-col gap-1">
                 {/* ✅ HOT DEAL ANIMATED */}
                 <p
-                  className="relative overflow-hidden px-2 py-1 bg-red-500 rounded-full w-fit text-white text-xs uppercase hot-tag"
+                  className="relative overflow-hidden px-2 py-1 bg-linear-to-r from-[#ff0000] to-[#ff9a00] rounded-full w-fit text-white text-xs uppercase hot-tag"
                   style={{ animationDelay: `${item * 0.2}s` }}
                 >
                   hot deal
@@ -109,7 +112,7 @@ const LicenceRadiosSection = () => {
                   src="/images/hd2.png"
                   alt=""
                   fill
-                  className="object-contain transition duration-500 group-hover:opacity-0"
+                  className="object-contain transition duration-500 group-hover:scale-130 group-hover:-translate-y-15"
                 />
               </div>
 
@@ -125,16 +128,6 @@ const LicenceRadiosSection = () => {
                   ₹1599
                 </span>
               </div>
-            </div>
-
-            {/* FLOAT IMAGE */}
-            <div className="absolute bottom-30 left-1/2 -translate-x-1/2 w-[85%] h-[45%] pointer-events-none">
-              <Image
-                src="/images/hd2.png"
-                alt=""
-                fill
-                className="object-contain opacity-0 transition duration-500 group-hover:scale-180 group-hover:opacity-100 group-hover:-translate-y-20"
-              />
             </div>
           </div>
         ))}

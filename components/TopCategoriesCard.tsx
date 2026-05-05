@@ -69,7 +69,7 @@ export default function TopCategoriesCard() {
   };
 
   return (
-    <div className="bg-[#F3FBFF] rounded-2xl p-4 md:p-6">
+    <div className="bg-[#F3FBFF]/90 rounded-2xl p-4 md:p-6">
       {/* HEADER */}
       <div className="flex justify-between items-center mb-6">
         <div className="flex items-center gap-3">

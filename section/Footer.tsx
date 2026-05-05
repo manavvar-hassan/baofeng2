@@ -10,9 +10,9 @@ import {
 export default function Footer() {
   return (
     <div className="bg-[#031C26] text-white px-6 lg:px-12 py-12 mt-3 mb:mt-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-10">
         {/* 🔥 LEFT - SUBSCRIBE */}
-        <div>
+        <div className="hidden sm:block">
           <h3 className="text-lg font-semibold mb-3">Exclusive</h3>
           <p className="text-sm mb-4">Get 10% off your first order</p>
 
@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
 
           {/* 🔥 SOCIAL ICONS (ANIMATION READY) */}
-          <div className="flex gap-4 mt-3">
+          <div className="flex gap-2 mt-3">
             <div className="social-icon">
               <FaFacebookF size={16} />
             </div>

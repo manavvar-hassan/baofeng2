@@ -1,22 +1,23 @@
 "use client";
 
 import SearchBar from "@/components/Search";
-import { Handbag, Heart, Menu } from "lucide-react";
+import { Handbag, Heart} from "lucide-react";
 import Image from "next/image";
 import { cartRef } from "@/utils/cartRef";
 import AnimatedLogo from "@/components/AnimatedLogo";
+import Menu from "@/components/Menu";
 
 const Navbar = () => {
   return (
     <div
-      className="bg-[#F3FBFF] py-2 px-2 xl:px-5 
+      className="bg-[#F3FBFF]/90 py-2 px-2 xl:px-5 
 flex items-center justify-between rounded-full shadow-md 
 fixed top-1 z-[9999] w-full"
     >
       {/* 🔥 LEFT */}
       <div className="flex items-center gap-3 shrink-0">
         <div className="w-[33px] h-[33px] border-2 border-black rounded-full flex items-center justify-center cursor-pointer">
-          <Menu />
+          <Menu/>
         </div>
         {/* 🔥 CENTER (LOGO) */}
         <div className="flex justify-center flex-1">

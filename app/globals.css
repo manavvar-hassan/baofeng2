@@ -7,9 +7,9 @@ body {
 }
 
 /* Hide scrollbar */
-.no-scrollbar::-webkit-scrollbar {
+.scrollbar-hide::-webkit-scrollbar {
   display: none;
-}
+} 
 
 .no-scrollbar {
   -ms-overflow-style: none; /* IE */
@@ -18,7 +18,7 @@ body {
 
 .holographic-card {
   position: relative;
-  overflow: hidden; /* 🔥 IMPORTANT */
+  overflow: hidden;
 }
 
 /* base layer */
@@ -128,7 +128,7 @@ body {
 
 /* 🔥 IMPORTANT FIXES */
 .animate-letter {
-  display: inline-block; /* ❗ REQUIRED */
+  display: inline-block; 
   animation-name: letterBounceLoop;
   animation-duration: 3.5s;
   animation-timing-function: ease-in-out;
@@ -138,7 +138,7 @@ body {
 
 
 .animate-loader {
-  display: inline-block; /* ❗ REQUIRED */
+  display: inline-block;
   animation-name: letterBounceLoop;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;

@@ -14,13 +14,13 @@ export default function DualBanner() {
       back: "/images/newA1.png",
       img1: "/images/feature.png",
       img2: "/images/radio2.png",
-      bg: "#313133",
+      bg: "#768076",
     },
     {
       back: "/images/newA1.png",
       img1: "/images/hd2.png",
       img2: "/images/hd1.png",
-      bg: "#1a1a3a",
+      bg: "#807680",
     },
   ];
 
@@ -186,7 +186,7 @@ export default function DualBanner() {
       <style jsx>{`
         .beam {
           position: absolute;
-          top: 120%;
+          top: 50%;
           left: -50%;
           width: 200%;
           height: 200%;

@@ -44,16 +44,14 @@ export default function SearchBar() {
       {/* 📱 MOBILE ICON */}
       <div
         onClick={(e) => {
-          e.stopPropagation(); // Prevents the click from going to the navbar
+          e.stopPropagation(); 
           setIsMobileOpen(true);
         }}
-        // Increased Z-index to ensure it is on top of everything
         className="md:hidden bg-black rounded-full p-3 cursor-pointer relative z-[10001]"
       >
         <Search className="w-4 h-4 text-white" />
       </div>
 
-      {/* 📱 MOBILE OVERLAY */}
      {/* 📱 MOBILE OVERLAY */}
 {isMobileOpen && (
   <div className="fixed inset-0 bg-white z-[10005] flex flex-col p-4 w-screen h-screen left-0 top-0">

@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import React, { useRef } from "react";
-import "../components/ThreeD/ThreeD.css";
 import { Eye, Star } from "lucide-react";
 
 const LicenceRadiosSection = () => {
@@ -20,6 +18,7 @@ const LicenceRadiosSection = () => {
 
       {/* ⚡ TOP SECTION */}
       <div className="flex flex-col lg:flex-row gap-6">
+        
         {/* LEFT BANNER */}
         <div className="flex-1 bg-[#D7DAEA] rounded-xl px-6 flex items-center justify-between group overflow-hidden">
           {/* TEXT */}
@@ -48,7 +47,7 @@ const LicenceRadiosSection = () => {
                         lg:rotate-45 scale-125
                         group-hover:rotate-0 
                         group-hover:scale-230 
-                        group-hover:-translate-y-27 
+                        group-hover:-translate-y-27
                         md:animate-none
                         animate-floatMobile
                         cursor-pointer

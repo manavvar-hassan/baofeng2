@@ -53,10 +53,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-[85vh] w-full overflow-hidden">
+    <div className="relative md:h-[85vh] w-full overflow-hidden">
       {/* Background Image */}
       <img
-        ref={imageRef}  
+        ref={imageRef}
         key={slides[index].img}
         src={slides[index].img}
         className="absolute w-full h-full object-cover"
@@ -68,19 +68,20 @@ export default function Hero() {
       {/* Content */}
       <div
         ref={contentRef}
-        className="relative z-10 h-full w-full flex flex-col justify-center items-center mt-70 px-10 text-white max-w-"
+        className="relative z-10 h-full w-full flex flex-col justify-center items-center mt-60 md:px-10 text-white"
       >
-        <h1 className="text-6xl font-bold mb-4">{slides[index].title}</h1>
+        <h1 className="text-2xl md:text-6xl font-semibold md:font-bold mb-1 md:mb-4">
+          {slides[index].title}
+        </h1>
 
-        <p className="mb-6">{slides[index].desc}</p>
+        <p className="text-sm md:text-base mb-6">{slides[index].desc}</p>
 
-       <button className="mt-6 bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#0069AF] hover:text-white cursor-pointer transition-all duration-300 flex items-center gap-2 group/btn overflow-hidden">
-              <span>Buy now</span>
-
-              <span className="flex items-center justify-center w-0 opacity-0 translate-x-2 transition-all duration-300 ease-out group-hover/btn:w-5 group-hover/btn:opacity-100 group-hover/btn:translate-x-0">
-                <ArrowUpRight size={16} />
-              </span>
-            </button>
+        <button className="mt-0 mb-4 md:mb-0 md:mt-6 bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#0069AF] hover:text-white cursor-pointer transition-all duration-300 flex items-center gap-2 group/btn overflow-hidden">
+          <span>Buy now</span>
+          <span className="flex items-center justify-center w-0 opacity-0 translate-x-2 transition-all duration-300 ease-out group-hover/btn:w-5 group-hover/btn:opacity-100 group-hover/btn:translate-x-0">
+            <ArrowUpRight size={16} />
+          </span>
+        </button>
       </div>
     </div>
   );

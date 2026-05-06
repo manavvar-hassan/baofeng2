@@ -41,7 +41,7 @@ export default function Marquee() {
         {[...Array(2)].map((_, i) => (
           <div
             key={i}
-            className="flex items-center gap-20 text-6xl font-semibold"
+            className="flex items-center gap-20 text-2xl md:text-6xl font-semibold"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

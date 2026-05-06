@@ -29,7 +29,9 @@ export default function InstagramScroll() {
       repeat: -1,
     });
 
-    return () => animation.kill();
+    return () => {
+      animation.kill();
+    };
   }, []);
 
   return (

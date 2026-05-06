@@ -10,8 +10,7 @@ const items = [
     price: "$219.99",
   },
   {
-    title:
-      "BF-33C UHF Compact Communication Radio Licence Free Walkie Talkie",
+    title: "BF-33C UHF Compact Communication Radio Licence Free Walkie Talkie",
     img: "/images/hd1.png",
     price: "$189.99",
   },
@@ -23,11 +22,11 @@ const items = [
 ];
 
 export default function LicenceFreeSection() {
-  const [hovered, setHovered] = useState(null);
+  const [hovered, setHovered] = useState<string | null>(null);
 
   const [selectedProduct, setSelectedProduct] = useState(items[0]);
 
-  const imageRef = useRef(null);
+  const imageRef = useRef<HTMLDivElement | null>(null);
 
   const mouse = useRef({ x: 0, y: 0 });
 
@@ -36,14 +35,14 @@ export default function LicenceFreeSection() {
   useEffect(() => {
     if (window.innerWidth < 768) return;
 
-    const move = (e) => {
+    const move = (e: { clientX: number; clientY: number; }) => {
       mouse.current.x = e.clientX;
       mouse.current.y = e.clientY;
     };
 
     window.addEventListener("mousemove", move);
 
-    let animationFrame;
+    let animationFrame: number;
 
     const animate = () => {
       pos.current.x += (mouse.current.x - pos.current.x) * 0.1;
@@ -55,8 +54,7 @@ export default function LicenceFreeSection() {
 
         imageRef.current.style.top = `${pos.current.y}px`;
 
-        imageRef.current.style.transform =
-          "translate(-50%, -50%)";
+        imageRef.current.style.transform = "translate(-50%, -50%)";
       }
 
       animationFrame = requestAnimationFrame(animate);
@@ -91,8 +89,7 @@ export default function LicenceFreeSection() {
           </h2>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-500 max-w-xl">
-            Discover the top-rated Models, perfect for every outdoor
-            enthusiast.
+            Discover the top-rated Models, perfect for every outdoor enthusiast.
           </p>
 
           {/* LIST */}

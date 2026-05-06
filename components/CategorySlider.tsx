@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const data = [
-  { title: "Best Deals", img: null, isDeal: true },
+  { title: "Best Deals", img: undefined, isDeal: true },
   { title: "Open-Ear", img: "/images/a1.png" },
   { title: "Earbuds", img: "/images/a2.png" },
   { title: "Headphones", img: "/images/a3.png" },
@@ -18,9 +18,9 @@ const data = [
 ];
 
 export default function CategorySlider() {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
-  const scroll = (dir) => {
+  const scroll = (dir: string) => {
     const container = scrollRef.current;
     if (!container) return;
 
@@ -100,6 +100,7 @@ export default function CategorySlider() {
                 Deals.
               </div>
             ) : (
+              // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={item.img}
                 alt={item.title}
